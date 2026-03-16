@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Barra de navegación con botón de retroceso -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="#FFFFFF"
+                    android:padding="8dp"
+                    android:background="@drawable/circle_background_small"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Registro"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_music_note"
+                    android:tint="#9C4DFF"
+                    android:padding="8dp"
+                    android:background="@drawable/circle_background_small"
+                    android:rotation="15" />
+            </LinearLayout>
+
+            <!-- Tarjeta principal -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="#1E1E1E"
+                app:strokeColor="#5E35B1"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <!-- Encabezado con icono -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="24dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_person"
+                            android:tint="#9C4DFF" />
+
+                        <TextView
+                            android:text="Mis Datos"
+                            android:textSize="18sp"
+                            android:textColor="#E0E0E0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <!-- Campo Nombre -->
+                    <TextView
+                        android:text="Nombre completo"
+                        android:textSize="14sp"
+                        android:textColor="#B0BEC5"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        app:boxBackgroundColor="#2A2A2A"
+                        app:boxStrokeColor="#9C4DFF"
+                        app:hintTextColor="#9C4DFF"
+                        app:startIconDrawable="@drawable/ic_person"
+                        app:startIconTint="#9C4DFF"
+                        app:endIconMode="clear_text">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etNombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Ingresa tu nombre"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#757575" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Campo Edad -->
+                    <TextView
+                        android:text="Edad"
+                        android:textSize="14sp"
+                        android:textColor="#B0BEC5"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        app:boxBackgroundColor="#2A2A2A"
+                        app:boxStrokeColor="#9C4DFF"
+                        app:hintTextColor="#9C4DFF"
+                        app:startIconDrawable="@drawable/ic_cake"
+                        app:startIconTint="#9C4DFF"
+                        app:endIconMode="clear_text">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etEdad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Ingresa tu edad"
+                            android:inputType="number"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#757575" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Campo Instrumento -->
+                    <TextView
+                        android:text="Instrumento musical"
+                        android:textSize="14sp"
+                        android:textColor="#B0BEC5"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        app:boxBackgroundColor="#2A2A2A"
+                        app:boxStrokeColor="#9C4DFF"
+                        app:hintTextColor="#9C4DFF"
+                        app:startIconDrawable="@drawable/ic_music_note"
+                        app:startIconTint="#9C4DFF"
+                        app:endIconMode="dropdown_menu">
+
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:id="@+id/spInstrumento"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Selecciona tu instrumento"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#757575"
+                            android:dropDownHeight="wrap_content"
+                             />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Checkbox de términos -->
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/cbTerminos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acepto los términos y condiciones"
+                        android:textColor="#E0E0E0"
+                        app:buttonTint="#9C4DFF"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:text="Al registrarte aceptas nuestra política de privacidad"
+                        android:textSize="12sp"
+                        android:textColor="#757575"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginBottom="24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- Botón de registro -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEnviar"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Completar registro"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false"
+                        app:cornerRadius="30dp"
+                        app:icon="@drawable/ic_check"
+                        app:iconGravity="textStart"
+                        app:iconPadding="8dp"
+                        app:backgroundTint="@color/button_gradient"
+                        android:stateListAnimator="@null"
+                        android:elevation="8dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Espaciado inferior -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

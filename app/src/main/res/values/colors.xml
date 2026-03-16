@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores primarios -->
+    <color name="primary">#9C4DFF</color>
+    <color name="primary_dark">#5E35B1</color>
+    <color name="primary_light">#BB86FC</color>
+
+    <!-- Colores secundarios -->
+    <color name="secondary">#2979FF</color>
+    <color name="secondary_dark">#0D47A1</color>
+    <color name="secondary_light">#6AB7FF</color>
+
+    <!-- Colores de fondo -->
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="card_background">#1E1E1E</color>
+
+    <!-- Colores de texto -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0BEC5</color>
+    <color name="text_hint">#757575</color>
+
+    <!-- Colores de acento -->
+    <color name="accent">#9C4DFF</color>
+    <color name="accent_light">#BB86FC</color>
+    <color name="accent_dark">#5E35B1</color>
+
+    <!-- Colores de estado -->
+    <color name="success">#4CAF50</color>
+    <color name="error">#F44336</color>
+    <color name="warning">#FFC107</color>
+    <color name="info">#2196F3</color>
+
+    <!-- Colores específicos para HarmonyHub -->
+    <color name="purple_primary">#9C4DFF</color>
+    <color name="purple_dark">#5E35B1</color>
+    <color name="purple_light">#BB86FC</color>
+    <color name="blue_accent">#2979FF</color>
+    <color name="button_gradient_start">#9C4DFF</color>
+    <color name="button_gradient_end">#2979FF</color>
+    <color name="button_gradient">#9C4DFF</color>
+
+    <!-- Colores para degradados -->
+    <color name="gradient_start">#0F2027</color>
+    <color name="gradient_center">#203A43</color>
+    <color name="gradient_end">#2C5364</color>
+</resources>
