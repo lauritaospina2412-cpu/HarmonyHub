@@ -23,6 +23,9 @@ HarmonyHub es una aplicación para Android desarrollada con **Kotlin** que permi
 - FormActivity → Formulario de registro
 - ConfirmacionActivity → Confirmación de registro
 
+## Screenshots
+
+
 ## 👩‍💻 Autora
 
 Laura Valentina Bautista
