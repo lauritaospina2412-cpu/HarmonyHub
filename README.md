@@ -1,4 +1,4 @@
-## 🎵HarmonyHub
+# 🎵HarmonyHub
 
 HarmonyHub es una aplicación para Android desarrollada con **Kotlin** que permite a los usuarios inscribirse en cursos de musica.
 
@@ -26,3 +26,5 @@ HarmonyHub es una aplicación para Android desarrollada con **Kotlin** que permi
 ## 👩‍💻 Autora
 
 Laura Valentina Bautista
+
+Proyecto académico de desarrollo de aplicaciones móviles con Android.
